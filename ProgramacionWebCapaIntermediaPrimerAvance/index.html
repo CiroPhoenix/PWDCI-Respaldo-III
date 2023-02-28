@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academia Saturno - Inicio</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js"></script>
+   <link rel="stylesheet" 
+   href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+   <script src="js/jquery.js"></script>
+
+<style>
+
+.cards:hover{
+  box-shadow: 20px 20px 100px -50px #000;
+  transition: 0.3s;
+}
+
+</style>
+
+</head>
+<body style="background-image: url('img/SaturnoBackground.jpg');">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="img/SaturnoLogo.png" alt="logo" width="150px">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Cursos
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Ptyhon</a></li>
+                  <li><a class="dropdown-item" href="#">Desarrollo De Videojuegos</a></li>
+                  <li><a class="dropdown-item" href="#">Dibujo</a></li>
+                  <li><a class="dropdown-item" href="#">Graficas 3D</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Otros</a></li>
+                </ul>
+              </li>
+             
+            </ul>
+            <form class="d-flex">
+             
+
+
+              <button><a class="link" href="login.html">Iniciar Sesion</a></button>
+              <button><a class="link" href="register.html">Registrarse</a></button>
+
+            </form>
+          </div>
+        </div>
+      </nav>
+
+
+
+
+
+
+
+
+
+    
+    
+      </div>
+
+
+
+
+
+
+
+
+
+</div>
+
+
+<div class="container p-5 mt-2" style="background-color: rgb(186, 211, 2); background-repeat: no-repeat; background-size: cover;" >
+  <div class="row d-flex justify-content-center">
+<div class="col-md-6">
+
+
+<div class="input-group">
+<input type="text"  placeholder="search" class="form-control" id="inp">
+<div class="input-group-append">
+<button type="button" class="btn btn-dark" id="search" >Search</button>
+</div>
+</div>
+</div>
+
+
+<div class="cart" >
+  <div class="pt-3 pl-0 pb-0 pr-0">
+  <i class="fas fa-shopping-cart fa-2x ml-md-5">  </i>
+  </div>
+  
+  <span class="badge badge-sucess mt-0 align-self-start" id="cart_item_count" style="margin-left: -25
+  px; margin-top: -5px;">0</span>
+  
+   </div>
+  
+
+
+</div>
+<div class="row p-5" id="panel">
+<h1 class="display-3 text-center text-muted" id="not_find_any_thing"></h1>
+
+
+<div class="contenedor-filtro" style="margin-left: 120px;">
+
+  <div style="margin-top: 5px;">
+<input type="radio" name="filtro" id="todo" checked>
+<label for="todo">Todo</label>   
+<input type="radio" name="filtro" id="ptyhon" checked>
+<label for="ptyhon">Ptyhon</label>   
+<input type="radio" name="filtro" id="videojuegos" checked>
+<label for="videojuegos">Desarrollo de Videojuegos</label>   
+<input type="radio" name="filtro" id="dibujo" checked>
+<label for="dibujo">Dibujo </label>   
+<input type="radio" name="filtro" id="graficas" checked>
+<label for="graficas">Graficas 3D</label>  
+
+<div class="imagenes-filtro">
+  
+  <div class="ptyhon">
+    <div class="col-md-3 mt-5" >
+ 
+
+      <div class="cards p-2">
+    
+        <img  class="card-img-top" src="img/Ptyhon.jpg" alt="">
+        <div class="card-body">
+    <div class="d-flex justify-content-between">
+    
+      <h5  class="card-title">Ptyhon</h5>
+    <span class="text-success">$150</span>
+    </div>
+    <p class="card-text" style="font-size: 14px;">NanoFlex</p>
+    <div class="d-flex justify-content-between">
+    <div class="bg-dark text-white text-center pl-2 pr-2 cart_btn">Buy Now</div>
+    <div class="bg-dark text-white text-center pl-2 pr-2">Whish List</div>
+    </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+  
+
+  <div class="dibujo">
+    <div class="col-md-3 mt-5">
+      <div class="cards p-2">
+    
+        <img id="dibujo" class="card-img-top" src="img/Dibujo.jpg" alt="">
+        <div class="card-body">
+    <div class="d-flex justify-content-between">
+    
+      <h5 id="dibujo" class="card-title">Dibujo</h5>
+    <span class="text-success">$150</span>
+    
+    </div>
+    <p class="card-text" style="font-size: 14px;">NanoFlex</p>
+    <div class="d-flex justify-content-between">
+    
+    <div class="bg-dark text-white text-center pl-2 pr-2 cart_btn">Buy Now</div>
+    <div class="bg-dark text-white text-center pl-2 pr-2">Whish List</div>
+    
+    </div>
+    
+        </div>
+    
+      </div>
+    </div>
+  </div>
+  
+
+
+  <div class="graficas">
+    <div class="col-md-3 mt-5">
+      <div class="cards p-2">
+    
+        <img id="dibujo" class="card-img-top" src="img/Graficas.jpg" alt="">
+        <div class="card-body">
+    <div class="d-flex justify-content-between">
+    
+      <h5 id="dibujo" class="card-title">Graficas</h5>
+    <span class="text-success">$150</span>
+    
+    </div>
+    <p class="card-text" style="font-size: 14px;">NanoFlex</p>
+    <div class="d-flex justify-content-between">
+    
+    <div class="bg-dark text-white text-center pl-2 pr-2 cart_btn">Buy Now</div>
+    <div class="bg-dark text-white text-center pl-2 pr-2">Whish List</div>
+    
+    </div>
+    
+        </div>
+    
+      </div>
+    </div>
+  </div>
+  
+  
+
+  <div class="videojuegos">
+    <div class="col-md-3 mt-5">
+      <div class="cards p-2">
+    
+        <img id="dibujo" class="card-img-top" src="img/Videojuegos.jpg" alt="">
+        <div class="card-body">
+    <div class="d-flex justify-content-between">
+    
+      <h5 id="dibujo" class="card-title">Videojuegos</h5>
+    <span class="text-success">$150</span>
+    
+    </div>
+    <p class="card-text" style="font-size: 14px;">NanoFlex</p>
+    <div class="d-flex justify-content-between">
+    
+    <div class="bg-dark text-white text-center pl-2 pr-2 cart_btn">Buy Now</div>
+    <div class="bg-dark text-white text-center pl-2 pr-2">Whish List</div>
+    
+    </div>
+    
+        </div>
+    
+      </div>
+    </div>
+  </div>
+ 
+  </div>
+
+
+
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+ </div>
+
+</div>
+
+
+
+<div class="row pr-md-5 d-flex justify-content-center justify-content-md-end bg-info">
+<div class="col-md-6 col-lg-4 mr-lg-5 border p-3 pb-4 rounded-lg bg-white ml-md-0" id="cart" style="position:
+absolute;z-index: 1;top: 80px;overflow: auto;">
+
+
+<div class="d-flex">
+<div class="col-md-3">
+<h5>Productos</h5>
+</div>
+<div class="col-md-3 d-flex flex-wrap align-content-center">
+<h5>Title</h5>
+</div>
+<div class="col-md-3 d-flex flex-wrap align-content-center">
+<h5>Qty</h5>
+</div>
+<div class="col-md-2 d-flex flex-wrap align-content-center">
+<h5>Price</h5>
+</div>
+<div class="col-md-1"></div>
+
+
+</div>
+
+<div id="order" style="overflow: auto;height: 250px;">
+
+
+</div>
+<div id="cart_footer" >
+<div id="order_btn" class="text-center text-white w-100 bg-dark p-2 font-weight-bold" style="letter-spacing: 
+1.2px; font-size: 20px;">
+  Order
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
+
